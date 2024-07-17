@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montana Rides - Book Now</title>
+    <link rel="stylesheet" href="montana.css">
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h1 class="logo">Montana Rides</h1>
+            <ul class="nav-links">
+                <li><a href="montana.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sign.html">Sign In</a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    <div class="container">
+        <div class="booking-container">
+            <h1>Book Your Ride</h1>
+            <form>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="one-time-ride">One-Time Ride</option>
+                    <option value="book-now">Book Now</option>
+                    <option value="rental-services">Rental Services</option>
+                </select>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="pickup">Pickup Point:</label>
+                <input type="text" id="pickup" required>
+                
+                <label for="dropoff">Drop-off Point:</label>
+                <input type="text" id="dropoff" required>
+                </form>
+                <li><a href="drivers.html"> 
+                    <button class="btn2">Book now</button> </div></a></li>
+         
+        </div>
+    </div>
+
+    <footer>
+        <div class="container32">
+          <div class="footer-content">
+            <div class="footer-text">
+              <h3>Contact Us</h3>
+              <p>Chitkara university himachal<br></p>
+              <p>Email: info@montanarides.com</p>
+              <p>Phone:5784456465</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com"><img src="C:\Users\shrut\OneDrive\Desktop\facebookblack.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com"><img src="C:\Users\shrut\OneDrive\Desktop\instablack.png" alt="Instagram"></a>
+              <a href="https://www.linkedin.com"><img src="C:\Users\shrut\OneDrive\Desktop\linkedinblack.png" alt="LinkedIn"></a>
+              <a href="https://www.twitter.com"><img src="C:\Users\shrut\OneDrive\Desktop\tweetblack.png" alt="Twitter"></a>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Montana Rides</p>
+            <p>Designed by Shruti, Smita, Shridhi, and Rhythm</p>
+          </div>
+        </div>
+      </footer>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('booking\ page.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+}
+
+.booking-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(215, 185, 16, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0.9;
+}
+
+h1 {
+    text-align: center;
+    color: #f9f7f7;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fc4007;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+li{
+    list-style-type: none;
+}
+
+    </style>
+</body>
+</html>
