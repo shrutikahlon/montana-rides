@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Montana Rides</title>
+  <link rel="stylesheet" href="montana.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+  <nav class="navbar">
+    <h1 class="logo">Montana Rides</h1>
+    <ul class="nav-links">
+        <li><a href="montana.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sign.html">Sign In</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+<body>
+  <div class="background-image">
+    
+    <img src="C:\montana\images\contact 1.jpg" alt="Mountains">
+    <div class="overlay-text">
+      <h1>Welcome to Montana Rides</h1>
+      <p>Explore the beauty of Montana with our reliable cab and rental services. We offer transportation solutions tailored to your mountain adventure needs. Book your ride today!</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="about-container">
+      <h2>About Montana Rides</h2>
+      <p>Montana Rides offers reliable cab and rental</p><p> services nestled in the heart of the breathtaking mountains.</p>
+      <p>Whether you're exploring the wilderness or need a ride to <p>your favorite ski resort,
+       we've got you covered.</p><p> Experience comfort and convenience with Montana Rides.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container32">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h3>Contact Us</h3>
+          <p>Chitkara University Himachal Pradesh <br></p>
+          <p>Email: info@montanarides.com</p>
+          <p>Phone:5784456465</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com"><img src="C:\Users\shrut\OneDrive\Desktop\facebookblack.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com"><img src="C:\Users\shrut\OneDrive\Desktop\instablack.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com"><img src= "C:\Users\shrut\OneDrive\Desktop\linkedinblack.png"alt="LinkedIn"></a>
+          <a href="https://www.twitter.com"><img src="C:\Users\shrut\OneDrive\Desktop\tweetblack.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Montana Rides</p>
+        <p>Designed by Shruti, Smita, Shridhi, and Rhythm</p>
+      </div>
+    </div>
+  </footer>
+<style>
+body {
+  .background-image {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay-text h1 {
+  font-size: 36px;
+}
+
+.overlay-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.overlay-text p:last-child {
+  margin-bottom: 0;
+}
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ background-image:url(contact.jpg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.1);;
+
+}
+
+.contact-container, .about-container {
+  background-color: #5c4e4e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+  height: 50%;
+  background: rgb(255, 255, 255,0.2);
+  color: #fff;
+
+}
+
+.contact-container {
+  margin-right: 20px;
+  animation: slideInLeft 1s forwards;
+}
+
+.about-container {
+  animation: slideInRight 1s forwards;
+  margin-left:20px ;
+  width: 49%;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  padding-right: 10px;
+  border: 1px solid #b9b5b5;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2ce11;
+}
+
+button:focus {
+  outline: none;
+}
+footer {
+  background-color: #1b1919;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container2 {
+  max-width: 1200px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-text {
+  flex:0.5;
+}
+
+.footer-text h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 20px 0;
+}
+
+</style>
+</body>
+</html>
